@@ -25,6 +25,7 @@ html{
 
 body{
     background-size: cover;
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
     font-family: 'Finlandica', sans-serif;
     font-size: 20px;   
 }
@@ -350,10 +351,12 @@ fieldset .letras input{
     font-size: 15px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: .5s;
 }
-
-
-
+.agregar_carrito:hover{
+    background: pink;
+    color: #fff;
+}
 
 /* footer */
 
