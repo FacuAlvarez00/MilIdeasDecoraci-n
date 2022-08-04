@@ -31,7 +31,19 @@ body{
 }
 
 
-header{
+nav{
+    background-color: #2fcdcd;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: black;
+}
+
+.navbar-collapse{
+    flex-grow: inherit;
+}
+
+/* header{
     display: flex;
     justify-content: space-between;
     background: #2fcdcd;
@@ -44,10 +56,6 @@ nav{
 }
 
     
-.iconoBarra{
-    width: 80px;
-    height: 80px;
-}
 
 ul li{
     list-style: none;
@@ -65,6 +73,10 @@ ul li a{
 
 .lista_index{
     display: flex;
+} */
+.iconoBarra{
+    width: 80px;
+    height: 80px;
 }
 /* index */
 
