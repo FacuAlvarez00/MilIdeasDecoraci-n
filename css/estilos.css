@@ -13,6 +13,12 @@ html{
 }
 
 
+body{
+    background-size: cover;
+    background-color: rgb(251, 237, 224);
+    font-family: 'Finlandica', sans-serif;
+    font-size: 20px;   
+}
 
 .font-destacados{
     font-family: 'Finlandica', sans-serif;
@@ -23,26 +29,17 @@ html{
 
 
 
-body{
-    background-size: cover;
-    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
-    font-family: 'Finlandica', sans-serif;
-    font-size: 20px;   
-}
+
+
 
 /* navbar */
 
 nav{
-    background-color: #2fcdcd;
+    background-color:rgb(251, 237, 224);
+    border-bottom: 1px solid #59393E;
+    border-top: 1px solid #59393E;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
-    color: black;
-}
-
-.navbar-collapse{
-    flex-grow: inherit;
-}
 
 .iconoBarra{
     width: 80px;
@@ -51,12 +48,6 @@ nav{
 /* index */
 
 
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding: 100px;
-}
 .decorandoIndex{
     font-weight: bold;
     color: black;
@@ -71,7 +62,6 @@ h4{
     font-weight: bold;
     color: black;
     text-align: center;
-
 }
 
 /* 5MM */
@@ -91,17 +81,15 @@ h4{
     text-align: center;
 }
 
+.nav-item{
+    margin: 0 50px;
+    color: #59393E;
+}
 
-
-
-
-
-
-
-
-
-
-
+.justify-content-center{
+    position: relative;
+    
+}
 
 
 /* Pagina Contacto */
@@ -345,7 +333,7 @@ fieldset .letras input{
     position: relative;
     top: 170px;
     border: none;
-    background:#350642;
+    background:rgb(241, 214, 189);
     color: #dcc2e4;
     width: 200px;
     height: 30px;
@@ -355,35 +343,72 @@ fieldset .letras input{
     transition: .5s;
 }
 .agregar_carrito:hover{
-    background: pink;
+     
+    background: rgb(87, 57, 61);
     color: #fff;
 }
+
+
+/* 5MM */
+
+.mm5_top{
+    margin: 100px 0;
+    display: flex;
+}
+
+
+
+.mm5_image{
+    height: 600px;
+}
+
+.grid_5mm{
+    display: grid;
+    grid-template-areas:"img1 img2"
+                        "img1 img3";
+    gap: 20px;    
+    margin: 100px 0;
+    }
+
+
+.img1{
+    grid-area: img1;
+    height: 500px;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3; 
+}
+
+
+
 
 /* footer */
 
 .footer{
-    padding: 40px 0;
-    background-color: #8fd4d4;
+    border-top: 0.5px solid #b0ada8;
     margin-top: 75px;
+    color: black;
 }
 
 .footer .social{
     text-align: center;
     padding-bottom: 25px;
-    color: #4b4c4d;
+    color: black;
+    padding: 40px;
 
 }
 
 .footer .social a{
     font-size: 24px;
     color: inherit;
-    border: 1px solid #ccc;
     width: 40px;
     height: 40px;
     line-height: 38px;
     display: inline-block;
     text-align: center;
-    border-radius: 50%;
     margin: 0 8px;
     opacity: 0.75;
 }
@@ -419,12 +444,19 @@ fieldset .letras input{
 }
 
 .footer .copyright{
-    margin-top: 0px;
-    padding-right: 40px; 
-    text-align: end;
-    font-size: 14px;
-    font-weight: bold;
-    color: snow;
+    margin-top: 20px;
+    background-color: #b0ada8;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.copyright_texto{
+    font-size: 12px;
+    position: relative;
+    top: 5px;
 }
 
 
