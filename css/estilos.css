@@ -40,11 +40,39 @@ nav{
     border-top: 1px solid #59393E;
 }
 
+.nav-item{
+    margin: 0 50px;
+}
+
+.button_5mm_container{
+    margin: 0 50px;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light{
+    color: #59393E;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: #ffc107;
+}
+.despegable_navbar:hover{
+    color: #ffc107;
+}
+
 
 .iconoBarra{
     width: 80px;
     height: 80px;
 }
+
+.despegable_navbar{
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    color: #59393E;
+}
+
+
 /* index */
 
 
@@ -81,15 +109,6 @@ h4{
     text-align: center;
 }
 
-.nav-item{
-    margin: 0 50px;
-    color: #59393E;
-}
-
-.justify-content-center{
-    position: relative;
-    
-}
 
 
 /* Pagina Contacto */
@@ -382,6 +401,7 @@ fieldset .letras input{
     grid-area: img3; 
 }
 
+/* 5MM */
 
 
 
@@ -494,13 +514,15 @@ fieldset .letras input{
         display: flex;
         flex-direction: column;
         padding-left: 5px;
+        margin: 300px 0px;
     }
     .formulario_contacto{
         width: 400px;
+        padding: 50px;
     }
     .textoo{
         width: 400px;
-        height: 700px;
+        padding: 50px;
     }
 
     .grid_3mm{
@@ -539,6 +561,27 @@ fieldset .letras input{
         height: 25px;
         font-size: 15px;
     }
+
+    
+    .grid_5mm{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .img1{
+    height: 300px;
+    }
+
+    .img2{
+    height: 150px;
+    }
+    .img3{
+    height: 200px;
+    }
+
+
+
+
 
 }
 
