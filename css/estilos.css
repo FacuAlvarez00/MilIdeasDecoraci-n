@@ -11,14 +11,9 @@ html {
 body {
   background-size: cover;
   background-color: #fbede0;
-  font-family: 'Finlandica', sans-serif;
   font-size: 20px; }
 
-.font-destacados {
-  font-family: 'Finlandica', sans-serif;
-  font-size: 30px;
-  letter-spacing: 2px;
-  text-transform: uppercase; }
+
 
 /* navbar */
 nav {
@@ -51,7 +46,30 @@ nav {
   list-style: none;
   color: #59393E; }
 
+.dropdown-menu{
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 15px;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #f8cb45;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 0.25rem;
+  }
+
+
 /* index */
+
+.index{
+  margin: 50px 0;
+}
+
 .decorandoIndex {
   font-weight: bold;
   color: black;
@@ -65,19 +83,7 @@ h4 {
   color: black;
   text-align: center; }
 
-/* 5MM */
-.first_row {
-  margin-top: 100px;
-  height: 300px;
-  background-color: blue;
-  border: solid black;
-  text-align: center; }
 
-.second_row {
-  height: 50px;
-  background-color: #2fcdcd;
-  border: solid white;
-  text-align: center; }
 
 /* Pagina Contacto */
 .main_contacto {
@@ -98,6 +104,10 @@ h4 {
 
 .h3_contact {
   padding-bottom: 20px; }
+
+.text--t1{
+  font-size: 30px;
+}
 
 .text--t2 {
   padding: 10px 0;
@@ -225,19 +235,44 @@ fieldset .letras input {
 .parrafonosotros {
   text-decoration: solid;
   color: black;
-  margin: 20px;
-  margin-top: 50px; }
+  margin: 50px 0 20px 0;
+  padding: 40px;
+}
+  
 
 .tituloNosotros {
   text-align: center;
   font-size: 50px;
-  font-weight: 100; }
-
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.itemsNosotros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .itemsNosotros li {
   text-decoration: none;
-  margin: 40px; }
+  list-style: none;
+  margin: 50px; 
+  text-align: center;
+}
+
+.textt{
+  background: radial-gradient(circle, rgba(245,220,200,1) 0%, rgba(240,220,202,1) 30%, rgba(251,237,224,1) 61%);
+  height: 200px;
+  width: 400px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+.mercadoplatinum{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Nosotros */
+
 /* 3MM */
 .item-grid {
   display: flex;
@@ -252,7 +287,8 @@ fieldset .letras input {
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
   grid-template-rows: 300px 300px;
-  grid-template-areas: "itemm0 itemm0 itemm1 itemm2" "itemm0 itemm0 itemm3 itemm4";
+  grid-template-areas: "itemm0 itemm0 itemm1 itemm2"
+ "itemm0 itemm0 itemm3 itemm4";
   gap: 60px;
   margin-top: 100px;
   padding-left: 200px; }
@@ -260,7 +296,6 @@ fieldset .letras input {
 .itemm0 {
   grid-area: itemm0;
   padding: 80px;
-  color: goldenrod;
   font-weight: bold; }
 
 .titulo_3mm {
@@ -285,6 +320,20 @@ fieldset .letras input {
   color: #fff; }
 
 /* 5MM */
+
+.first_row {
+  margin-top: 100px;
+  height: 300px;
+  background-color: blue;
+  border: solid black;
+  text-align: center; }
+.second_row {
+  height: 50px;
+  background-color: #2fcdcd;
+  border: solid white;
+  text-align: center; }
+  
+
 .mm5_top {
   margin: 100px 0;
   display: flex; }
@@ -294,7 +343,9 @@ fieldset .letras input {
 
 .grid_5mm {
   display: grid;
-  grid-template-areas: "img1 img2" "img1 img3";
+  grid-template-areas:"img1 img2"
+                      "img1 img3";
+
   gap: 20px;
   margin: 100px 0; }
 
@@ -309,19 +360,21 @@ fieldset .letras input {
   grid-area: img3; }
 
 /* 5MM */
+
 /* footer */
-.footer {
+
+footer {
   border-top: 0.5px solid #b0ada8;
   margin-top: 75px;
   color: black; }
 
-.footer .social {
+footer .social {
   text-align: center;
   padding-bottom: 25px;
   color: black;
   padding: 40px; }
 
-.footer .social a {
+footer .social a {
   font-size: 24px;
   color: inherit;
   width: 40px;
@@ -332,10 +385,10 @@ fieldset .letras input {
   margin: 0 8px;
   opacity: 0.75; }
 
-.footer .social a:hover {
+footer .social a:hover {
   opacity: 0.9; }
 
-.footer ul {
+footer ul {
   margin-top: 0;
   padding: 0;
   list-style: none;
@@ -344,19 +397,19 @@ fieldset .letras input {
   margin-bottom: 0;
   text-align: center; }
 
-.footer ul li a {
+footer ul li a {
   color: inherit;
   text-decoration: none;
   opacity: 0.8; }
 
-.footer ul li {
+footer ul li {
   display: inline-block;
   padding: 0 15px; }
 
-.footer ul li a:hover {
+footer ul li a:hover {
   opacity: 1; }
 
-.footer .copyright {
+footer .copyright {
   margin-top: 20px;
   background-color: #b0ada8;
   color: #fff;
@@ -371,21 +424,12 @@ fieldset .letras input {
   top: 5px; }
 
 @media (max-width: 480px) {
-  .grid_index {
-    width: 90%;
-    grid-template-areas: "imageIndex1"  "imageIndex2"  "imageIndex3"  "imageIndex4";
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 400px);
-    padding-left: 40px; }
-  .videoIndex iframe {
-    width: 400px;
-    height: 300px; }
   .tituloNosotros {
     display: flex;
     flex-direction: column;
     font-size: 25px; }
   .parrafonosotros {
-    font-size: 14px; }
+    font-size: 16px; }
   ul li a {
     font-size: 15px;
     margin: 0 10px; }
@@ -437,7 +481,51 @@ fieldset .letras input {
   .img2 {
     height: 150px; }
   .img3 {
-    height: 200px; } }
+    height: 200px; }
+  .dropdown-menu{
+    font-size: 12px;
+  }
+  .despegable_navbar {
+    font-size: 15px;
+  }
+  .nav-item {
+    margin: 0 0px; }
+  .button_5mm_container {
+    margin: 0 0px; }
+  .itemsNosotros{
+  display: flex;
+  flex-direction: column;  
+}
+.tituloNosotros {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.itemsNosotros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemsNosotros li {
+  text-decoration: none;
+  list-style: none;
+  margin: 50px; 
+  text-align: center;
+}
+.textt{
+  height: 100px;
+  width: 300px;
+  font-size: 22px;
+}
+.mercadoplatinum{
+  width: 220px;
+}
+iframe{
+  width: 450px;
+  height: 250px;
+}
+}
 
 @media (min-width: 480px) {
   .foto1 {
@@ -446,4 +534,6 @@ fieldset .letras input {
   .foto4 {
     grid-row: span 2; }
   .foto5 {
-    grid-column: span 2; } }
+    grid-column: span 2; } 
+  }
+
