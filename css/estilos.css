@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,21 +12,17 @@ body {
   background-color: #fbede0;
   font-size: 20px; }
 
-
-
 /* navbar */
 nav {
   background-color: #fbede0;
   border-bottom: 1px solid #59393E;
   border-top: 1px solid #59393E; }
 
-.nav-item {
+.nav-item, .button_5mm_container {
   margin: 0 50px; }
 
-.button_5mm_container {
-  margin: 0 50px; }
-
-.navbar-light .navbar-nav .nav-link.active, .navbar-light {
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light {
   color: #59393E; }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -46,7 +41,7 @@ nav {
   list-style: none;
   color: #59393E; }
 
-.dropdown-menu{
+.dropdown-menu {
   position: absolute;
   z-index: 1000;
   display: none;
@@ -59,16 +54,12 @@ nav {
   list-style: none;
   background-color: #f8cb45;
   background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: 0.25rem;
-  }
-
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem; }
 
 /* index */
-
-.index{
-  margin: 50px 0;
-}
+.index {
+  margin: 50px 0; }
 
 .decorandoIndex {
   font-weight: bold;
@@ -83,8 +74,6 @@ h4 {
   color: black;
   text-align: center; }
 
-
-
 /* Pagina Contacto */
 .main_contacto {
   display: flex;
@@ -93,21 +82,20 @@ h4 {
   margin: 100px 0px; }
 
 .textoo {
-  width: 600px;
   height: 600px;
+  width: 600px;
   background-color: #81b5be;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
+  color: #fff;
   padding: 0 30px; }
 
 .h3_contact {
   padding-bottom: 20px; }
 
-.text--t1{
-  font-size: 30px;
-}
+.text--t1 {
+  font-size: 30px; }
 
 .text--t2 {
   padding: 10px 0;
@@ -134,7 +122,7 @@ fieldset .letras input {
   height: 50px;
   background-color: #17161Dff;
   font-size: bold;
-  color: white;
+  color: #fff;
   margin: 15px 0;
   display: flex;
   text-align: start; }
@@ -143,15 +131,15 @@ fieldset .letras input {
   height: 100px; }
 
 .opcional_titulo {
-  color: white; }
+  color: #fff; }
 
 .opcional {
-  color: white;
+  color: #fff;
   margin: 5px 0; }
 
 .buttonss {
   border: none;
-  background-color: #b5d0d5;
+  background-color: #81b5be;
   color: #17161Dff;
   width: 100px;
   height: 40px;
@@ -202,9 +190,7 @@ fieldset .letras input {
   background-image: url(../assets/contacto/15fd8fa6aa4685aa56776e09dad9adb1.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%; }
+  background-repeat: no-repeat; }
 
 .foto4 {
   background-image: url(../assets/contacto/D_NQ_NP_734221-MLM41328183638_042020-O.jpg);
@@ -236,43 +222,38 @@ fieldset .letras input {
   text-decoration: solid;
   color: black;
   margin: 50px 0 20px 0;
-  padding: 40px;
-}
-  
+  padding: 40px; }
 
 .tituloNosotros {
   text-align: center;
   font-size: 50px;
   font-weight: 100;
-  margin-bottom: 30px;
-}
-.itemsNosotros{
+  margin-bottom: 30px; }
+
+.itemsNosotros {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
+
 .itemsNosotros li {
   text-decoration: none;
   list-style: none;
-  margin: 50px; 
-  text-align: center;
-}
+  margin: 50px;
+  text-align: center; }
 
-.textt{
-  background: radial-gradient(circle, rgba(245,220,200,1) 0%, rgba(240,220,202,1) 30%, rgba(251,237,224,1) 61%);
+.textt {
+  background: radial-gradient(circle, #f5dcc8 0%, #f0dcca 30%, #fbede0 61%);
   height: 200px;
   width: 400px;
   font-size: 30px;
-  border-radius: 10px;
-}
-.mercadoplatinum{
+  border-radius: 10px; }
+
+.mercadoplatinum {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-}
+  margin-right: auto; }
 
 /* Nosotros */
-
 /* 3MM */
 .item-grid {
   display: flex;
@@ -287,8 +268,7 @@ fieldset .letras input {
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
   grid-template-rows: 300px 300px;
-  grid-template-areas: "itemm0 itemm0 itemm1 itemm2"
- "itemm0 itemm0 itemm3 itemm4";
+  grid-template-areas: "itemm0 itemm0 itemm1 itemm2" "itemm0 itemm0 itemm3 itemm4";
   gap: 60px;
   margin-top: 100px;
   padding-left: 200px; }
@@ -320,19 +300,18 @@ fieldset .letras input {
   color: #fff; }
 
 /* 5MM */
-
 .first_row {
   margin-top: 100px;
   height: 300px;
   background-color: blue;
   border: solid black;
   text-align: center; }
+
 .second_row {
   height: 50px;
   background-color: #2fcdcd;
   border: solid white;
   text-align: center; }
-  
 
 .mm5_top {
   margin: 100px 0;
@@ -343,9 +322,7 @@ fieldset .letras input {
 
 .grid_5mm {
   display: grid;
-  grid-template-areas:"img1 img2"
-                      "img1 img3";
-
+  grid-template-areas: "img1 img2" "img1 img3";
   gap: 20px;
   margin: 100px 0; }
 
@@ -360,9 +337,7 @@ fieldset .letras input {
   grid-area: img3; }
 
 /* 5MM */
-
 /* footer */
-
 footer {
   border-top: 0.5px solid #b0ada8;
   margin-top: 75px;
@@ -482,50 +457,40 @@ footer .copyright {
     height: 150px; }
   .img3 {
     height: 200px; }
-  .dropdown-menu{
-    font-size: 12px;
-  }
+  .dropdown-menu {
+    font-size: 12px; }
   .despegable_navbar {
-    font-size: 15px;
-  }
-  .nav-item {
+    font-size: 15px; }
+  .nav-item, .button_5mm_container {
     margin: 0 0px; }
   .button_5mm_container {
     margin: 0 0px; }
-  .itemsNosotros{
-  display: flex;
-  flex-direction: column;  
-}
-.tituloNosotros {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 100;
-  margin-bottom: 30px;
-}
-.itemsNosotros{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.itemsNosotros li {
-  text-decoration: none;
-  list-style: none;
-  margin: 50px; 
-  text-align: center;
-}
-.textt{
-  height: 100px;
-  width: 300px;
-  font-size: 22px;
-}
-.mercadoplatinum{
-  width: 220px;
-}
-iframe{
-  width: 450px;
-  height: 250px;
-}
-}
+  .itemsNosotros {
+    display: flex;
+    flex-direction: column; }
+  .tituloNosotros {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 30px; }
+  .itemsNosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .itemsNosotros li {
+    text-decoration: none;
+    list-style: none;
+    margin: 50px;
+    text-align: center; }
+  .textt {
+    height: 100px;
+    width: 300px;
+    font-size: 22px; }
+  .mercadoplatinum {
+    width: 220px; }
+  iframe {
+    width: 450px;
+    height: 250px; } }
 
 @media (min-width: 480px) {
   .foto1 {
@@ -534,6 +499,4 @@ iframe{
   .foto4 {
     grid-row: span 2; }
   .foto5 {
-    grid-column: span 2; } 
-  }
-
+    grid-column: span 2; } }
